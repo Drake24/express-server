@@ -2,6 +2,8 @@
 var fs = require('fs');
 var path = require('path');
 
+// Index file to load everything in the routes
+// folder.
 module.exports = function (app) {
   // Loop through folder and include the file
   fs.readdirSync('./routes').forEach(function (file) {

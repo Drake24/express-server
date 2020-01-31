@@ -1,5 +1,6 @@
 const mysql = require('mysql');
 
+// Example of connecting to database
 module.exports = function(app) {
     app.get('/posts', (req, res) => {
         console.log("Loading Posts");
